@@ -1,18 +1,17 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './styles.css';
-import { HaikuCheck } from './../src/haiku-checker.js';
+import { GalacticAgeCalculator } from './../src/galatic-age-calculator.js';
 
 $(document).ready(function() {
-  $('#haiku').submit(function(event) {
+  $('#').submit(function(event) {
     event.preventDefault();
-    var rowOne = $('#rowOne').val();
-    var rowTwo = $('#rowTwo').val();
-    var rowThree = $('#rowThree').val();
-    var output = new HaikuCheck(rowOne, rowTwo, rowThree);
+    //var row = $('#').val();
+
+    var output = new GalacticAgeCalculator();
     output.checkHaiku();
 
-    $('ul#solution').append("<h1>" + "<p>" + output.checkHaiku() + "</p>" + "</h1>");
+    $('ul#').append("<h1>" + "<p>" + output + "</p>" + "</h1>");
 
   });
 });
