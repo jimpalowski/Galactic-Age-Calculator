@@ -35,9 +35,7 @@ export class GalacticAgeCalculator {
     return JupiterAge;
 
     }
-  }
-
-
+    
   lifeExpectancy(){
     let userLifeExpectancy = 0;
   }
