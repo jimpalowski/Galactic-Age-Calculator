@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './styles.css';
-import { GalacticAgeCalculator } from './../src/galatic-age-calculator.js';
+import { GalacticAgeCalculator } from './galactic-age-calculator.js';
 
 $(document).ready(function() {
   $('#').submit(function(event) {
