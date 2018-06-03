@@ -1,10 +1,11 @@
-import { GalacticAgeCalculator } from './../src/galatic-age-calculator.js';
+import { GalacticAgeCalculator } from './../src/galactic-age-calculator.js';
 
-describe ('galatic-age-checker', function() {
+describe ('galactic-age-checker', function() {
   it ('should test whether the users age is in Mercury Age', function() {
-    var galaticAge = new GalacticAgeCalculator(12);
-    console.log(galaticAge);
-    expect(galaticAge.checkGalaticAge(12)).toEqual(12);
-    console.log("new " + checkGalaticAge());
+    var galacticAge = new GalacticAgeCalculator(100);
+    console.log(galacticAge);
+
+    expect(galacticAge.checkAgeOnMercury()).toEqual(10);
+    console.log("new " + checkAgeOnMercury());
   });
 });
